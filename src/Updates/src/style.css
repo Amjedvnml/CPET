@@ -1,0 +1,342 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Styles Start */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+body {
+    margin-top: 32px;
+    background-color: #fff;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    padding: 10px;
+}
+
+/* Navigation Bar Start */
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 40px;
+}
+
+.top-nav .mainConnect {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.top-nav .mainConnect span {
+    padding-left: 15px;
+}
+
+.top-nav .mainConnect span a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.top-nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    flex-grow: 1;
+}
+
+.top-nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 25px;
+    cursor: pointer;
+}
+
+.top-nav ul li a {
+    text-decoration: none;
+    color: #324e8a;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.top-nav ul li a:hover {
+    padding: 8px;
+    border: 1px solid #324e8a;
+    border-radius: 20px;
+}
+
+.top-nav #searchImg {
+    width: 32px;
+    margin-left: auto;
+}
+
+.top-nav #navLogo {
+    width: 65px;
+}
+
+#linkNav {
+    padding: 8px;
+    border: 1px solid #324e8a;
+    border-radius: 20px;
+}
+
+/* Navigation Bar End */
+
+.part-describ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.description {
+    display: flex;
+    margin-top: 90px;
+    justify-content: center;
+    align-items: center;
+}
+
+.description .content,
+.about-image {
+    width: 50%;
+}
+
+.description .content {
+    margin-right: 200px;
+}
+
+.about-image img {
+    height: 260px;
+    margin-top: 60px;
+}
+
+.description .content h1 {
+    margin-top: 20px;
+    font-size: 31px;
+    color: #393c8f;
+    width: 1000px;
+}
+
+.description .content p {
+    width: 722px;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.description .content button {
+    margin-top: 10px;
+    width: 143px;
+    height: 55px;
+    background-color: #324e8a;
+    color: #fff;
+    border: none;
+    border-radius: 61px;
+    font-size: 21px;
+}
+
+.description .content button:hover {
+    background-color: #fff;
+    color: #324e8a;
+    border: 1px solid #324e8a;
+}
+
+/* Description End */
+
+/* Center Registration Start */
+.centerRegistration {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 165px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 300px;
+    margin-bottom: 150px;
+}
+
+.centerRegistration .image {
+    width: 100%;
+    height: 250px;
+    background: url(../Assets/course-image1.jpg);
+    background-size: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.centerRegistration .centerCard{
+    width: 390px;
+    height: 555px;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(97, 9, 9, 0.3);
+}
+
+.centerRegistration .centerCard .textContent {
+    margin-left: 8px;
+    margin-top: 28px;
+}
+
+.centerRegistration .centerCard .textContent .upToday {
+    display: flex;
+    justify-content: center;
+}
+
+.centerRegistration .centerCard .textContent .upToday .updated {
+    width: 170px;
+    height: 33px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #324e8a;
+}
+
+.centerRegistration .centerCard .textContent .upToday .updated img {
+    width: 30px;
+}
+
+.centerRegistration .centerCard .textContent .upToday .updated span {
+    color: #fff;
+}
+
+.centerRegistration .centerCard .textContent .gap {
+    margin-top: 27px;
+}
+
+.centerRegistration .centerCard .textContent h1 a {
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+}
+
+.centerRegistration .centerCard .textContent p {
+    margin-top: 10px;
+}
+
+.centerRegistration .centerCard .textContent button {
+    margin-top: 15px;
+    background: none;
+    width: 105px;
+    height: 40px;
+    border: 1px solid #324e8a;
+    border-radius: 25px;
+}
+/* Center Registration End */
+
+/* Explore News Start */
+
+.loadMore {
+    margin-top: 50px;
+    margin-bottom: 150px;
+    text-align: center;
+}
+
+.loadMore a {
+    text-decoration: none;
+    color: #007bff;
+}
+/* Explore News End */
+
+/* Footer Section Start */
+
+.footer {
+    width: 100%;
+    height: 500px;
+    background-color: #324e8a;
+}
+
+.footer .footer-Content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .footer-Content .conclude {
+    display: flex;
+}
+
+.footer .footer-Content .conclude .aboutContent {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+}
+
+.footer .footer-Content .conclude .aboutContent .textContent{
+    color: #fff;
+}
+
+.footer .footer-Content .conclude .aboutContent .textContent h1{
+    width: 436px;
+}
+
+.footer .footer-Content .conclude .aboutContent .textContent p{
+    width: 755px;
+}
+
+.footer .footer-Content .conclude .links {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .footer-Content .conclude .links .dhLinks {
+    margin: 25px;
+    color: #fff;
+}
+
+.footer .footer-Content .conclude .links .dhLinks h1 {
+    font-size: 20px;
+    width: 125px;
+}
+
+.footer .footer-Content .conclude .links .dhLinks ul li {
+    list-style-type: none;
+}
+
+.footer .footer-Content .conclude .links .dhLinks ul li a {
+    text-decoration: none;
+    color: #ececec;
+}
+
+.footer .footer-Content .copyright {
+    color: #fff;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1;
+    flex-wrap: wrap;
+}
+
+.footer .footer-Content .copyright .uil {
+    color: #9c8c34;
+}
+
+.footer .footer-Content .copyright a {
+    text-decoration: none;
+    color: #fff;
+}
+/* Footer Section End */

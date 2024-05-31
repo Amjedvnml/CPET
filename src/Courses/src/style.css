@@ -1,0 +1,770 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Styles Start */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+body {
+    margin-top: 32px;
+    background-color: #fff;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    padding: 10px;
+}
+
+/* Navigation Bar Start */
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 40px;
+}
+
+.top-nav .mainConnect {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.top-nav .mainConnect span {
+    padding-left: 15px;
+}
+
+.top-nav .mainConnect span a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.top-nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    flex-grow: 1;
+}
+
+.top-nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 25px;
+    cursor: pointer;
+}
+
+.top-nav ul li a {
+    text-decoration: none;
+    color: #324e8a;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.top-nav ul li a:hover {
+    padding: 8px;
+    border: 1px solid #324e8a;
+    border-radius: 20px;
+}
+
+.top-nav #searchImg {
+    width: 32px;
+    margin-left: auto;
+}
+
+.top-nav #navLogo {
+    width: 65px;
+}
+
+#linkNav {
+    padding: 8px;
+    border: 1px solid #324e8a;
+    border-radius: 20px;
+}
+
+/* Navigation Bar End */
+
+/* Description Start */
+.part-describ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.description {
+    display: flex;
+    margin-top: 90px;
+    justify-content: center;
+    align-items: center;
+}
+
+.description .content,
+.about-image {
+    width: 50%;
+}
+
+.description .content {
+    margin-right: 200px;
+}
+
+.about-image img {
+    height: 260px;
+    margin-top: 60px;
+}
+
+.description .content h1 {
+    margin-top: 20px;
+    font-size: 44px;
+    color: #393c8f;
+    width: 676px;
+}
+
+.description .content p {
+    width: 722px;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.description .content button {
+    margin-top: 10px;
+    width: 143px;
+    height: 55px;
+    background-color: #324e8a;
+    color: #fff;
+    border: none;
+    border-radius: 61px;
+    font-size: 21px;
+}
+
+.description .content button:hover {
+    background-color: #fff;
+    color: #20346A;
+    border: 1px solid #20346A;
+}
+
+/* Description End */
+
+/* Noteworthy Acquistion Start */
+.noteWorthy {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 300px;
+}
+
+.noteWorthy .image {
+    width: 100%;
+    height: 250px;
+    background: url(../Assets/course-image1.jpg);
+    background-size: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.noteWorthy .worthyCard{
+    width: 390px;
+    height: 555px;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(97, 9, 9, 0.3);
+}
+
+.noteWorthy .worthyCard .textContent {
+    margin-left: 8px;
+    margin-top: 28px;
+}
+
+.noteWorthy .worthyCard .textContent .gap {
+    margin-top: 27px;
+}
+
+.noteWorthy .worthyCard .textContent h1 a {
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+}
+
+.noteWorthy .worthyCard .textContent p {
+    margin-top: 10px;
+}
+
+.noteWorthy .worthyCard .textContent button {
+    margin-top: 15px;
+    background: none;
+    width: 105px;
+    height: 40px;
+    border: 1px solid #324e8a;
+    border-radius: 25px;
+}
+
+.noteWorthy .worthyCard .textContent button:hover{
+    background-color: #f1f5f9;
+}
+/* Noteworthy Acquistion End */
+
+
+/* Courses and Program Grid Start */
+
+.about-course {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.course-prog {
+    display: flex;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: repeat(8, 75px);
+    grid-template-columns: repeat(10, 100px);
+    gap: 20px;
+    transition: gap 0.3s ease-in-out;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.item {
+    padding: 20px;
+    font-weight: 700;
+}
+
+.item:hover {
+    transform: scale(1.01);
+}
+
+.item-1 {
+    grid-row: 1 / 5;
+    grid-column: 1 / 6;
+    background-image: url(../Assets/course-image1.jpg);
+    background-size: cover;
+    border-radius: 40px;
+}
+
+.item-2 {
+    grid-row: 5 / 9;
+    grid-column: 1 / 6;
+    color: #000;
+}
+
+.item-2 h1 {
+    font-weight: 800;
+    color: #000;
+}
+
+.item-2 p {
+    width: 450px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #000;
+    margin-top: 45px;
+}
+
+.item-2 button {
+    margin-top: 90px;
+    width: 150px;
+    height: 55px;
+    border: none;
+    border-radius: 45px;
+    background-color: #20346A;
+    color: #fff;
+}
+
+.item-3 {
+    grid-row: 1 / 5;
+    grid-column: 6 / 9;
+    color: #fff;
+    background-color: #20346A;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.item-3 h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.item-3 p {
+    width: 202px;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+.item-4 {
+    grid-row: 5 / 9;
+    grid-column: 6 / 9;
+    color: #fff;
+    background-color: #1D4ED8;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.item-4 h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.item-4 p {
+    width: 202px;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+.item-3,
+.item-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-5 {
+    grid-row: 1 / 9;
+    grid-column: 9 / 11;
+    color: #fff;
+    background-color: #324e8a;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Courses and Program Grid End */
+
+/* Section More Courses Start */
+.more-courses {
+    display: flex;
+    justify-content: center;
+}
+
+.more-courses .course-details {
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 45px;
+    width: 95%;
+    height: 600px;
+    background-color: #324e8a;
+}
+
+.more-courses .course-details h1 {
+    font-size: 36px;
+}
+
+.more-courses .course-details h1,
+.more-courses .course-details h3 {
+    color: #fff;
+    text-align: center;
+}
+
+.more-courses .course-details h3 span {
+    width: 65px;
+    height: 25px;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: #1D4ED8;
+}
+
+.more-courses .course-details .course-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 94%;
+    height: 450px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 45px;
+    padding: 20px;
+    padding-left: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.more-courses .course-details .course-list .course-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.more-courses .course-details .course-list .course-item:last-child {
+    border-bottom: none;
+}
+
+.more-courses .course-details .course-list .course-item .course-name {
+    font-weight: 500;
+    font-size: 16px;
+    color: #333;
+}
+
+.more-courses .course-details .course-list .course-item a {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.more-courses .course-details .course-list .all-courses {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.more-courses .course-details .course-list .all-courses .all-courses-link {
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: none;
+    border: 1px solid #000;
+    border-radius: 30px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.more-courses .course-details .course-list .all-courses .all-courses-link:hover {
+    background-color: #f1f5f9;
+}
+
+/* Section More Courses End */
+
+/* Center Count Start */
+
+.center-count {
+    margin-bottom: 100px;
+    background-color: #1e3a8a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    flex-wrap: wrap;
+}
+
+.center-count .star-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.center-count .star-container .star {
+    font-size: 50px;
+    color: white;
+}
+
+.center-count .star-container .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 5px;
+}
+
+.center-count .star-container .text-container .font,
+.center-count .star-container .text-container .study-centers {
+    color: white;
+    font-size: 45px;
+}
+
+.center-count .star-container .text-container .study-centers {
+    color: white;
+    font-size: 25px;
+    margin-top: 10px;
+    opacity: 80%;
+}
+
+/* Center Count End */
+
+/* Video Style Start */
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video .video-container {
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.video .video-container video {
+    width: 100%;
+    height: auto;
+    border-radius: 100px;
+}
+
+.video .video-container .text-overlay h2 {
+    position: relative;
+    bottom: 60px;
+    left: 50px;
+    color: #fff;
+    font-size: 27px;
+}
+
+.video .video-container .text-overlay span {
+    color: #3B82F6;
+}
+
+.video .video-container .watermark {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    top: -272px;
+    left: 135px;
+}
+
+.video .video-container .intro-button {
+    cursor: pointer;
+}
+
+/* Video Style End */
+
+/* News Updates Start */
+
+.new-updates {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.updates {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #324e8a;
+    height: 6px;
+    width: 1440px;
+    border-radius: 5px;
+}
+
+.updates h1 {
+    width: 220px;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* News Updates End */
+
+
+/* Pop-Up Section Start */
+
+.pop-up {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.blue-ground {
+    border-radius: 15px;
+    width: 87%;
+    height: 312px;
+    background-color: #324e8a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blue-ground .white-ground {
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* overflow: hidden; */
+    /* max-width: 800px; */
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.blue-ground .white-ground h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+
+}
+
+.blue-ground .white-ground .card-image {
+    display: flex;
+    align-items: center;
+}
+
+.blue-ground .white-ground .card-image img {
+    width: 415px;
+    height: auto;
+    object-fit: cover;
+}
+
+.blue-ground .white-ground .card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blue-ground .white-ground .card-content .card-category span {
+    background-color: #2e69ff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.blue-ground .white-ground .card-content .card-update span {
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+    display: block;
+}
+
+.blue-ground .white-ground p {
+    color: #555;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.blue-ground .white-ground .read-more {
+    text-decoration: none;
+    color: #2e69ff;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.blue-ground .white-ground .read-more:hover {
+    text-decoration: underline;
+}
+/* Pop-Up Section End */
+
+/* Explore News Start */
+
+.explore {
+    margin-top: 50px;
+    margin-bottom: 150px;
+    text-align: center;
+}
+
+.explore a {
+    text-decoration: none;
+    color: #007bff;
+}
+/* Explore News End */
+
+/* Footer Section Start */
+
+.footer {
+    width: 100%;
+    height: 500px;
+    background-color: #324e8a;
+}
+
+.footer .footer-Content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .footer-Content .conclude {
+    display: flex;
+}
+
+.footer .footer-Content .conclude .aboutContent {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+}
+
+.footer .footer-Content .conclude .aboutContent .textContent{
+    color: #fff;
+}
+
+.footer .footer-Content .conclude .aboutContent .textContent h1{
+    width: 436px;
+}
+
+.footer .footer-Content .conclude .aboutContent .textContent p{
+    width: 755px;
+}
+
+.footer .footer-Content .conclude .links {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .footer-Content .conclude .links .dhLinks {
+    margin: 25px;
+    color: #fff;
+}
+
+.footer .footer-Content .conclude .links .dhLinks h1 {
+    font-size: 20px;
+    width: 125px;
+}
+
+.footer .footer-Content .conclude .links .dhLinks ul li {
+    list-style-type: none;
+}
+
+.footer .footer-Content .conclude .links .dhLinks ul li a {
+    text-decoration: none;
+    color: #ececec;
+}
+
+.footer .footer-Content .copyright {
+    color: #fff;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1;
+    flex-wrap: wrap;
+}
+
+.footer .footer-Content .copyright .uil {
+    color: #9c8c34;
+}
+
+.footer .footer-Content .copyright a {
+    text-decoration: none;
+    color: #fff;
+}
+/* Footer Section End */
+
+
+/* Styles End */
